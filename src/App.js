@@ -3,18 +3,22 @@ import Intro from "./component/intro/Intro"
 import Portfolio from "./component/portfolio/Portfolio"
 import Projects from "./component/projects/Projects"
 import Contact from "./component/contact/Contact"
-import './app.css'
+import Footer from "./component/footer/Footer"
+import './app.scss'
 
 function App() {
   return (
     <div className="app">
         <Topbar/>
         <div className="section">
-        <Intro/>
-        <Portfolio/>
-        <Projects/>
-        <Contact/>  
+          <Intro/>
+          <Portfolio/>
+          <Projects/>
+          <Contact/> 
+          
         </div>
+
+        <Footer/> 
     </div>
   );
 }

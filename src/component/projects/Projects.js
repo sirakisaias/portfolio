@@ -1,9 +1,9 @@
-import "./projects.css"
+import "./projects.scss"
 
 export default function Projects() {
     return (
         <div className="projects">
-            hi
+           
         </div>
     )
 }
