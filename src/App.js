@@ -4,20 +4,23 @@ import Portfolio from "./component/portfolio/Portfolio"
 import Projects from "./component/projects/Projects"
 import Contact from "./component/contact/Contact"
 import Footer from "./component/footer/Footer"
+import Menu from "./component/menu/Menu"
 import './app.scss'
+import { useState } from "react"
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="app">
-        <Topbar/>
+        <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <div className="section">
           <Intro/>
-          <Portfolio/>
+          <Portfolio/> 
           <Projects/>
           <Contact/> 
-          
         </div>
-
         <Footer/> 
     </div>
   );

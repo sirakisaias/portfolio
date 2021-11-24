@@ -1,7 +1,21 @@
 .intro {
     background-color: lightblue;
-}
-.intro h1 {
-    color: rgb(92, 47, 92);
-    text-align: center;
+    display: flex;
+
+    .left{
+        flex: 0.5;
+        .imgContainer{
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            img{
+                height: 90%;
+                border-radius: 50%;
+
+            }
+        }
+    }
+    .right{
+        flex:0.5;
+    }
 }
