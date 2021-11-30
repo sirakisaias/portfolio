@@ -7,15 +7,66 @@
         .imgContainer{
             width: 700px;
             height: 700px;
-            border-radius: 50%;
+            border-radius: 0%;
             img{
                 height: 90%;
                 border-radius: 50%;
-
             }
         }
     }
     .right{
         flex:0.5;
+        position: relative;
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+                span{
+                    font-size: inherit;
+                    color: crimson;
+                }
+                .ityped-cursor{
+                    animation: blinking 1s infinite;
+                }
+                @keyframes blinking {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+            a{
+                position: absolute;
+                bottom: 30px;
+                left: 40%;
+                .keyboardArrowDown{
+                    font-size: 70px;
+                    color: black;
+                    animation: arrowBlink 2s infinite;
+                }
+                @keyframes arrowBlink {
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+
+          
+        }
     }
 }

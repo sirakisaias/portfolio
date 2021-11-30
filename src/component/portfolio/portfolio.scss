@@ -1,3 +1,56 @@
+@import "../../global.scss";
 .portfolio {
-    background-color: lightcoral;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 40px;
+    }
+
+    ul{
+        margin: 10px;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+    .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: black;
+            img{
+                width: 220px;
+                height: 150px;
+                margin: 20px 20px;
+                border-radius: 20px;
+                border: 1px solid gray;
+                cursor: pointer;
+                object-fit: cover;
+                z-index: 1;
+                transition: all .5s ease;
+
+            }
+            &:hover{
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+
+            h3{
+                position: absolute;
+                font-size: 20px;
+
+            }
+        }
+    }
 }
